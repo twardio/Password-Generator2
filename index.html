@@ -10,11 +10,35 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Password Generator</h1>
+        <h1 style="color: aliceblue;">Password Generator</h1>
       </header>
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
+          <div class="option">
+            <label>Choose a password length</label>
+            <input type="number" id="length" min="10" max="64" value="" />
+          </div>
+    
+          <div class="option">
+            <label>Include lowercase characters</label>
+            <input type="checkbox" id="lowercase" checked />
+          </div>
+    
+          <div class="option">
+            <label>Include uppercase characters</label>
+            <input type="checkbox" id="uppercase" checked />
+          </div>
+    
+          <div class="option">
+            <label>Include special characters</label>
+            <input type="checkbox" id="symbols" checked />
+          </div>
+    
+          <div class="option">
+            <label>Include numberic characters</label>
+            <input type="checkbox" id="numbers" checked />
+          </div>
         </div>
         <div class="card-body">
           <textarea
